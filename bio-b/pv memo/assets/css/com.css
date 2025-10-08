@@ -1,0 +1,434 @@
+@media (max-width: 768px) {
+  .video-player {
+    width: 100%;
+    background: 0 0;
+  }
+  .video-player iframe {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin: auto;
+  }
+  #frame {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin: auto;
+  }
+}
+
+.topo{
+  text-align: left;
+}
+
+
+
+        /* Estilo Principal da Manchete (headline) */
+        .headline {
+            /* text-4xl font-extrabold leading-tight mt-4 mb-6 */
+            font-size: 1.75rem;
+            line-height: 2.5rem;
+            font-weight: 800;
+            margin-top: 1rem;
+            margin-bottom: 1.1rem;
+        }
+               .highlight-text {
+            /* text-red-700 */
+            color: #b91c1c; /* Cor vermelha-700 */
+        }
+
+        /* Subtexto de Chamada para Ação (sub-heading) */
+        .sub-heading {
+            /* text-lg font-normal mb-8 */
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+        }
+
+        /* Informações do Autor e Data (author-info) */
+        .author-info {
+            /* text-sm font-normal text-gray-700 */
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            font-weight: 400;
+            color: #4b5563; /* Cor cinza-700 */
+        }
+.dtc {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header h2 {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  
+
+}
+
+.references {
+  background-color: white !important;
+}
+
+.references h2 {
+  color: #000000;
+  font-size: 20px;
+}
+
+.references mark{
+  background-color: rgb(52 100 157);
+  color: #fff;
+  border-radius: 2px;
+}
+.references img {
+  width: 90%; /* Deixa a imagem ocupar toda a largura do contêiner */
+  max-width: 500px; /* Limita a largura máxima a 500px */
+  height: auto; /* Mantém a proporção da imagem */
+  border: 2px solid #fff; /* Adiciona uma borda preta */
+
+}
+
+.packages {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 15px;
+  cursor: pointer; /* Indica que o elemento é clicável */
+  /* Outros estilos do package */
+}
+
+.package-link {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: inherit; /* Herda a cor do texto do elemento pai */
+  display: block; /* Garante que o link ocupe todo o espaço necessário */
+}
+
+.package {
+  border: 1px solid transparent;
+  padding: 20px;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 8px;
+}
+
+
+
+.package:hover {
+  transform: translateY(-5px);
+}
+
+.package h2 {
+  color: #333;
+  font-size: 20px;
+}
+
+.package p {
+  color: #000000;
+  font-size: 15px;
+}
+
+.package img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 7px;
+}
+
+.price {
+  font-size: 16px; /* Tamanho padrão para o texto envolvendo o preço */
+  margin: 15px 0;
+  color: #cc0000;
+}
+
+.price-value {
+  font-size: 30px; /* Tamanho maior para o valor do preço */
+  font-weight: bold; /* Tornar o valor do preço mais destacado */
+  color: #000000; /* Cor para chamar mais atenção ao preço */
+}
+
+
+.button-link {
+  display: inline-block;
+  width: 80%;
+  padding: 10px 20px;
+  background-image: linear-gradient(to bottom, #76b947 0%, #237a3b 100%);
+  color: white; /* Cor do texto */
+  text-decoration: none; /* Remove o sublinhado do link */
+  border-radius: 5px;
+  border: 1px solid #000000; /* Cor da borda */
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative; /* Posicionamento relativo para elementos internos */
+  display: inline-block; /* Permite o alinhamento correto dos elementos internos */
+}
+
+.button-link:hover {
+  background-image: linear-gradient(to bottom, #237a3b 100%, #76b947 0%);
+  color: white;
+}
+
+.offer-tag {
+  display: block; /* Faz o texto aparecer em uma nova linha dentro do link */
+  font-size: 12px; /* Tamanho menor do texto para diferenciar do principal */
+  color: #000000; /* Cor amarela para destacar a oferta, ajuste conforme necessário */
+  font-weight: normal; /* Menos destaque comparado ao texto do link */
+}
+
+
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ddd; /* Cor da linha divisória */
+  margin: 1px 0; /* Espaçamento vertical das linhas */
+}
+
+.fa-check-circle {
+  color: rgb(0, 0, 0); /* Define a cor do ícone */
+  margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+  font-size: 18px; /* Ajuste do tamanho do ícone conforme necessário */
+}
+
+.description {
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+  padding: 5px 0;
+}
+
+
+.total {
+  color: #777;
+  font-size: 14px; /* Tamanho de fonte menor para informações adicionais */
+  margin-top: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #fff;
+  font-weight: bold;
+  color: #555;
+  font-size: 16px;
+  border-top: 1px solid #ccc;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  color: #000000;
+}
+
+.package.try-one, .package.best-value, .package.good-value {
+  background: linear-gradient(to bottom, #8ec9f4, #ffffff);
+  border-color: #2e82bc;
+}
+
+.package.best-value {
+  position: relative;
+  border-color: #2e82bc;
+  box-shadow: 0 0 15px rgba(39, 103, 149, 0.989);
+  background-color: #fff; /* Cor de fundo geral do pacote */
+  padding: 20px; /* Espaçamento interno para estética */
+  padding-bottom: 20px;
+  border-radius: 8px; /* Bordas arredondadas para suavidade */
+}
+
+
+.package.best-value::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 40px; /* Altura da faixa amarela ajustada para conter o texto */
+  background-color: #2e82bc; /* Cor da faixa */
+  border-top-left-radius: 8px; /* Arredondando o topo esquerdo */
+  border-top-right-radius: 8px; /* Arredondando o topo direito */
+  z-index: 0; /* Garante que a faixa fique atrás do texto */
+}
+
+.package.best-value h2 {
+  position: relative;
+  color: #000000; /* Cor do texto para contraste com o amarelo */
+  margin-top: -10px; /* Ajusta a posição vertical do título */
+  z-index: 1; /* Garante que o texto fique na frente da faixa amarela */
+}
+
+
+@keyframes pulse {
+  0%, 100% {    transform: scale(1);  }
+  50% {    transform: scale(1.05);  }
+}
+
+.animado {
+  animation: pulse 1s infinite;
+}
+
+button:hover {
+  background-color: darkred;
+}
+
+strike {
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .product {
+      width: 100%;
+  }
+
+  .products {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+* {
+  font-family: helvetica, arial, sans-serif;
+}
+
+body {
+  font-size: 16px;
+}
+mark {
+  background-color: yellow;
+  color: black; /* opcional, para garantir que o texto fique legível */
+}
+.alert-top {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+.far{
+  font-family:"Font Awesome 5 Free";
+  font-weight:400
+}
+#comentarios_face {
+  font-family: Arial;
+  background-color: #F6F7F9;
+  font-size: 14px;
+  padding: 20px;
+}
+.titulo_comentario {
+  
+  border-bottom: 1px solid #E9EBEE;
+  display: block;
+  padding-bottom: 6px;
+}
+.perfil {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+.perfil .nome {
+  color: #365899;
+  font-weight: bold;
+}
+.nome img {
+  float: left;
+  padding-right: 10px;
+}
+.perfil img {
+  width: 60px !important;
+  height: 50px;
+}
+.perfil p {
+  margin: 0;
+  margin-left: 60px;
+  margin-bottom: 0px;
+}
+.infos {
+  font-size: 11px;
+  color: #90949c;
+}
+.perfil2 {
+  padding-left: 9px;
+  border-left: 1px solid #E9EBEE;
+  margin-left: 50px;
+  padding-bottom: 0;
+}
+
+.bbtn {
+  width: 100%;
+  max-width: 449px;
+}
+
+@media (max-width: 768px) {
+  .video-player {
+    margin-top: 0 !important;
+  }
+}
+
+.a-btn {
+      text-decoration: none;
+      -webkit-font-smoothing: antialiased;
+      margin: 0;
+      border: 0; 
+      font: inherit; 
+      vertical-align: baseline;
+      color: #2e82bc; 
+      outline: 0; 
+      line-height: 1; 
+      text-align: center; 
+      position:relative!important; display: inline-block!important;
+      border-style: solid; 
+      width: 100%; padding-left: 0!important; padding-right: 0!important; 
+      margin-bottom: 10px; 
+      padding: 22px 44px; border-color: #ff5535; border-width: 0px; 
+      border-radius: 6px; 
+      background: linear-gradient(to bottom, #056b13 0%, #029d19 100%); 
+      box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5); 
+      text-decoration: none!important;
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+    .span-btn {
+      text-decoration: none;
+      -webkit-font-smoothing: antialiased; 
+      text-align: center;
+      margin: 0; 
+      border: 0; 
+      font: inherit;
+      vertical-align: baseline;
+      display: block; 
+      position: relative; 
+      z-index: 1; 
+      padding: 0 15px; 
+      white-space: normal; 
+      font-size: 25px;
+      color: #ffffff; 
+      font-family: Oswald; 
+      font-weight: bold; 
+      text-shadow: #000000 0px 1px 0px;
+      text-decoration: none;
+    }
+    .span-btn2 {
+      -webkit-font-smoothing: antialiased; 
+      text-align: center;
+      padding: 0; border: 0;
+      font: inherit; 
+      vertical-align: baseline; 
+      display: block; 
+      position: relative;
+      z-index: 1; 
+      margin: .2em 0 -.5em; 
+      font-size: 15px; 
+      color: #f5e051; 
+      font-family: Cabin; 
+      font-weight: bold; 
+      font-style: italic;
+      text-shadow: #000000 0px 1px 0px;
+    }
