@@ -15,6 +15,8 @@
             background-color: white;
             color: #122a04;
         }
+        
+        /* Estilos do Botão Principal */
         .btn-green {
             background-color: #009315;
             box-shadow: 0 4px 0px #006b0f;
@@ -22,10 +24,28 @@
             align-items: center;
             justify-content: center;
             width: 100%;
+            transition: all 0.2s ease;
+            animation: pulse-animation 2s infinite; /* Ativa a animação de pulsar */
         }
+        
         .btn-green:active {
-            transform: translateY(2px);
+            transform: translateY(2px) scale(0.98);
             box-shadow: 0 2px 0px #006b0f;
+            animation: none; /* Para a animação ao clicar */
+        }
+
+        /* Definição da Animação Pulsar */
+        @keyframes pulse-animation {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 6px 15px rgba(0, 147, 21, 0.4), 0 4px 0px #006b0f;
+            }
+            100% {
+                transform: scale(1);
+            }
         }
     </style>
 </head>
@@ -33,10 +53,10 @@
 
     <div class="w-full max-w-md mx-auto flex flex-col items-center px-4 py-6">
         
-        <!-- Header / Logo -->
+        <!-- Cabeçalho / Logótipo -->
         <header class="w-full flex flex-col items-center mb-8">
             <div class="flex items-center gap-2 mb-6">
-                <!-- Leaf Icon SVG -->
+                <!-- Ícone de Folha SVG -->
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#76c93d]">
                     <path d="M12 2C12 2 12 7 7 12C2 17 7 22 12 22C12 22 12 17 17 12C22 7 17 2 12 2Z" fill="currentColor"/>
                     <path d="M12 2C12 2 12 5 10 7C8 9 5 10 5 10" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
@@ -47,7 +67,7 @@
                 </div>
             </div>
 
-            <!-- Steps -->
+            <!-- Passos -->
             <div class="flex items-center justify-between w-full text-[10px] font-bold">
                 <div class="flex items-center gap-1">
                     <span class="px-3 py-1 rounded-full step-active uppercase">Paso 1</span>
@@ -67,17 +87,17 @@
             </div>
         </header>
 
-        <!-- Warning Section -->
+        <!-- Secção de Aviso -->
         <section class="text-center space-y-4 mb-8">
             <h2 class="text-[#facc15] font-black text-lg uppercase tracking-wide">
                 ¡Detente ahora, aviso importante!
             </h2>
             <p class="text-[#22d3ee] font-black text-sm uppercase leading-tight px-4">
-                ¡No volverás a tener esa oportunidad si cierras esa página!
+                ¡No volverás a tener esa oportunidade si cierras esa página!
             </p>
         </section>
 
-        <!-- Video Section (Vturb Embed) -->
+        <!-- Secção de Vídeo (Vturb Embed) -->
         <div class="w-full mb-8 rounded-lg overflow-hidden shadow-2xl border border-white/10">
             <vturb-smartplayer id="vid-69b33869ee2947d3ff2b7a03" style="display: block; margin: 0 auto; width: 100%; "></vturb-smartplayer>
             <script type="text/javascript">
@@ -87,13 +107,13 @@
             </script>
         </div>
 
-        <!-- Pricing and CTA -->
+        <!-- Preço e CTA -->
         <div class="w-full text-center space-y-6">
             <p class="text-xl font-bold underline underline-offset-4 decoration-2">
                 Solo $ 37 / Mensuales
             </p>
 
-            <!-- URL de comprar -->
+            <!-- URL de comprar (Com animação pulsar) -->
             <a href="https://www.checkout-ds24.com/answer/yes?template=light" class="btn-green py-5 rounded-xl text-2xl font-black uppercase tracking-tight transition-all no-underline">
                 Añadir al carrito
             </a>
@@ -104,7 +124,7 @@
             </a>
         </div>
 
-        <!-- Trust Badges -->
+        <!-- Selos de Confiança -->
         <footer class="w-full mt-12 grid grid-cols-3 gap-2 px-2">
             <div class="flex flex-col items-center text-center">
                 <div class="flex items-center gap-1 mb-1">
