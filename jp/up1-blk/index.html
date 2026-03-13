@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo Japones - Oferta Especial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #122a04; /* Verde escuro de fundo */
+        }
+        .step-active {
+            background-color: white;
+            color: #122a04;
+        }
+        .btn-green {
+            background-color: #009315;
+            box-shadow: 0 4px 0px #006b0f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .btn-green:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0px #006b0f;
+        }
+    </style>
+</head>
+<body class="text-white flex flex-col justify-center min-h-screen">
+
+    <div class="w-full max-w-md mx-auto flex flex-col items-center px-4 py-6">
+        
+        <!-- Header / Logo -->
+        <header class="w-full flex flex-col items-center mb-8">
+            <div class="flex items-center gap-2 mb-6">
+                <!-- Leaf Icon SVG -->
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#76c93d]">
+                    <path d="M12 2C12 2 12 7 7 12C2 17 7 22 12 22C12 22 12 17 17 12C22 7 17 2 12 2Z" fill="currentColor"/>
+                    <path d="M12 2C12 2 12 5 10 7C8 9 5 10 5 10" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <div class="flex flex-col leading-none">
+                    <span class="text-2xl font-black tracking-tight uppercase">Protocolo</span>
+                    <span class="text-2xl font-light tracking-[0.2em] uppercase">Japones</span>
+                </div>
+            </div>
+
+            <!-- Steps -->
+            <div class="flex items-center justify-between w-full text-[10px] font-bold">
+                <div class="flex items-center gap-1">
+                    <span class="px-3 py-1 rounded-full step-active uppercase">Paso 1</span>
+                    <div class="h-[1px] w-4 bg-white/30"></div>
+                </div>
+                <div class="flex items-center gap-1 opacity-60">
+                    <span class="px-3 py-1 border border-white rounded-full uppercase">Paso 2</span>
+                    <div class="h-[1px] w-4 bg-white/30"></div>
+                </div>
+                <div class="flex items-center gap-1 opacity-60">
+                    <span class="px-3 py-1 border border-white rounded-full uppercase">Paso 3</span>
+                    <div class="h-[1px] w-4 bg-white/30"></div>
+                </div>
+                <button class="px-2 py-1 border border-[#a3e635] text-[#a3e635] rounded-full text-[8px] uppercase">
+                    Acceder App
+                </button>
+            </div>
+        </header>
+
+        <!-- Warning Section -->
+        <section class="text-center space-y-4 mb-8">
+            <h2 class="text-[#facc15] font-black text-lg uppercase tracking-wide">
+                ¡Detente ahora, aviso importante!
+            </h2>
+            <p class="text-[#22d3ee] font-black text-sm uppercase leading-tight px-4">
+                ¡No volverás a tener esa oportunidad si cierras esa página!
+            </p>
+        </section>
+
+        <!-- Video Section (Vturb Embed) -->
+        <div class="w-full mb-8 rounded-lg overflow-hidden shadow-2xl border border-white/10">
+            <vturb-smartplayer id="vid-69b33869ee2947d3ff2b7a03" style="display: block; margin: 0 auto; width: 100%; "></vturb-smartplayer>
+            <script type="text/javascript">
+                var s=document.createElement("script");
+                s.src="https://scripts.converteai.net/e47d2695-e7da-47cf-a7a5-1f9da5313774/players/69b33869ee2947d3ff2b7a03/v4/player.js",
+                s.async=!0,document.head.appendChild(s);
+            </script>
+        </div>
+
+        <!-- Pricing and CTA -->
+        <div class="w-full text-center space-y-6">
+            <p class="text-xl font-bold underline underline-offset-4 decoration-2">
+                Solo $ 37 / Mensuales
+            </p>
+
+            <!-- URL de comprar -->
+            <a href="https://www.checkout-ds24.com/answer/yes?template=light" class="btn-green py-5 rounded-xl text-2xl font-black uppercase tracking-tight transition-all no-underline">
+                Añadir al carrito
+            </a>
+
+            <!-- URL de não comprar -->
+            <a href="https://www.checkout-ds24.com/answer/no" class="inline-block bg-[#9c1c1c] hover:bg-[#b02222] px-10 py-3 rounded-full text-sm font-bold shadow-lg transition-colors no-underline">
+                No, gracias...
+            </a>
+        </div>
+
+        <!-- Trust Badges -->
+        <footer class="w-full mt-12 grid grid-cols-3 gap-2 px-2">
+            <div class="flex flex-col items-center text-center">
+                <div class="flex items-center gap-1 mb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+                </div>
+                <span class="text-[9px] font-bold uppercase leading-tight">Pago<br>Seguro</span>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+                <div class="flex items-center gap-1 mb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+                    <div class="flex flex-col -space-y-1">
+                        <span class="text-[8px]">★</span>
+                        <span class="text-[8px]">★</span>
+                    </div>
+                </div>
+                <span class="text-[9px] font-bold uppercase leading-tight">Satisfacción<br>Garantizada</span>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+                <div class="flex items-center gap-1 mb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+                </div>
+                <span class="text-[9px] font-bold uppercase leading-tight">Privacidad<br>Protegida</span>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts do Digistore24 -->
+    <script src="https://www.digistore24-scripts.com/service/digistore.js"></script>
+    <script>
+        if (typeof digistoreUpsell === 'function') {
+            digistoreUpsell();
+        }
+    </script>
+</body>
+</html>
