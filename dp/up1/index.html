@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divine Confirmation Required</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Montserrat) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Script Digistore24 -->
+    <script src="https://www.digistore24-scripts.com/service/digistore.js"></script>
+    <script>digistoreUpsell()</script>
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #ffffff;
+        }
+        .esconder {
+            display: none;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col items-center">
+
+    <!-- Faixa Laranja do Topo -->
+    <div class="w-full bg-[#E4874C] text-white text-center py-4 px-4 shadow-sm">
+        <h1 class="text-lg md:text-xl font-bold flex items-center justify-center gap-2">
+            <span>🔒</span> Divine Confirmation Required Before Access
+        </h1>
+        <p class="text-base md:text-lg mt-1 font-semibold">
+            Final step—please stay with me...
+        </p>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <main class="w-full max-w-4xl mx-auto px-4 py-8 flex flex-col items-center">
+        
+        <!-- Textos Acima do Vídeo -->
+        <div class="text-center mb-6">
+            <p class="text-lg md:text-xl text-gray-800 font-medium">
+                You're almost there. One final message 💭
+            </p>
+            <p class="text-lg md:text-xl text-gray-800 mt-1">
+                <span class="font-bold">Watch now—</span> your next divine step depends on it.
+            </p>
+        </div>
+
+        <!-- Container do Vídeo (Vturb) -->
+        <div class="w-full max-w-[800px] bg-black/5 rounded-md overflow-hidden relative" style="min-height: 400px; display: flex; align-items: center; justify-content: center;">
+            
+            <!-- Código do Player Vturb Inserido Aqui -->
+            <vturb-smartplayer id="vid-69c1b31b423ef7939cad3fe2" style="display: block; margin: 0 auto; width: 100%;"></vturb-smartplayer>
+            
+        </div>
+
+        <!-- Botão de Ação (CTA) -->
+        <div class="mt-6 w-full max-w-[800px] flex flex-col items-center esconder">
+            
+            <!-- Link de Aceite (YES) -->
+            <a href="https://www.checkout-ds24.com/answer/yes?template=light" class="w-full bg-[#3CC80D] hover:bg-[#35b30c] text-white font-bold text-lg md:text-xl py-4 rounded-[8px] border-b-4 border-[#2D9909] uppercase transition-all active:border-b-0 active:translate-y-1 shadow-md cursor-pointer block text-center">
+                I Want To Access My Prayer Now!
+            </a>
+            
+            <!-- Link de Recusa (NO) -->
+            <a href="https://www.checkout-ds24.com/answer/no" class="mt-4 text-gray-600 text-sm hover:text-gray-900 transition-colors">
+                I don't
+            </a>
+        </div>
+
+    </main>
+
+    <!-- Script do Vturb para carregar o player -->
+    <script type="text/javascript">
+        var s=document.createElement("script");
+        s.src="https://scripts.converteai.net/e47d2695-e7da-47cf-a7a5-1f9da5313774/players/69c1b31b423ef7939cad3fe2/v4/player.js";
+        s.async=!0;
+        document.head.appendChild(s);
+    </script>
+
+    <!-- Script de Delay dos Botões -->
+    <script>
+        var delaySeconds = 265;
+        var player = document.querySelector("vturb-smartplayer");
+        player.addEventListener("player:ready", function() {
+            player.displayHiddenElements(delaySeconds, [".esconder"], {
+                persist: true
+            });
+        });
+    </script>
+</body>
+</html>
