@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive Offer - Last Chance</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Montserrat) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Script Digistore24 -->
+    <script src="https://www.digistore24-scripts.com/service/digistore.js"></script>
+    <script>digistoreUpsell()</script>
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col items-center">
+
+    <!-- Container Principal Centralizado -->
+    <main class="w-full max-w-[600px] mx-auto px-4 py-8 flex flex-col items-center text-center">
+        
+        <!-- Faixa Vermelha de Atenção -->
+        <div class="w-full bg-[#FF3B30] text-white text-[15px] md:text-lg font-bold py-3 px-2 shadow-sm mb-8">
+            ⚠️ Attention!!! There's still the last step to<br class="hidden md:block"> complete your purchase... ⚠️
+        </div>
+
+        <!-- Headline Principal -->
+        <h1 class="text-2xl md:text-3xl font-extrabold text-black mb-6 leading-tight">
+            Wait! Read this carefully before leaving...
+        </h1>
+
+        <!-- Prova Social / Urgência -->
+        <p class="text-[15px] md:text-base font-bold text-black leading-relaxed mb-6 px-2">
+            🚨 95% of those who received the Sacred Prayer of Saint Anthony also said YES to the Turbo Prayer of Saint Anthony and the 10 Errors Guide — because they know miracles don't wait.
+        </p>
+
+        <!-- Chamada Last Chance -->
+        <p class="text-lg md:text-xl text-gray-900 mb-2">
+            I'm giving you <span class="font-extrabold">ONE LAST CHANCE...</span>
+        </p>
+
+        <!-- Ancoragem de Preço -->
+        <p class="text-base md:text-lg text-gray-900 mb-0 font-medium">
+            Not for <span class="font-bold line-through text-gray-500">$67</span>, but only
+        </p>
+
+        <!-- Preço Gigante -->
+        <div class="text-[90px] md:text-[110px] font-bold text-[#008A00] leading-none my-2 tracking-tighter">
+            $37
+        </div>
+
+        <!-- Escassez (Timer / Texto) -->
+        <p class="text-base md:text-lg font-bold text-black my-4 flex items-center justify-center gap-1">
+            ⚡ This exclusive offer expires in <span id="timer" class="text-red-600 ml-1">05:00</span>! ⚡
+        </p>
+
+        <!-- Chamada para Ação (CTA Text) -->
+        <p class="text-base md:text-lg font-extrabold text-black mb-6 mt-2">
+            Click below to claim your special discount before it's gone!
+        </p>
+
+        <!-- Botões -->
+        <div class="w-full flex flex-col items-center">
+            <!-- Link de Aceite (YES) -->
+            <a href="https://www.checkout-ds24.com/answer/yes?template=light" class="w-full bg-[#3CC80D] hover:bg-[#35b30c] text-white font-bold text-lg md:text-xl py-4 rounded-[8px] border-b-4 border-[#2D9909] uppercase transition-all active:border-b-0 active:translate-y-1 shadow-md cursor-pointer block text-center px-4">
+                I Want To Access My Prayer Now!
+            </a>
+            
+            <!-- Link de Recusa (NO) -->
+            <a href="https://www.checkout-ds24.com/answer/no" class="mt-6 text-gray-500 text-sm hover:text-gray-900 transition-colors">
+                I don't
+            </a>
+        </div>
+
+    </main>
+
+    <!-- Script de Countdown de 5 Minutos (Opcional, mas aumenta conversão) -->
+    <script>
+        function startTimer(duration, display) {
+            var timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    timer = 0; // Para no 00:00
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            var fiveMinutes = 60 * 5,
+                display = document.querySelector('#timer');
+            startTimer(fiveMinutes, display);
+        };
+    </script>
+</body>
+</html>
