@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Step - Protect Your Blessings</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Montserrat) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Script Digistore24 -->
+    <script src="https://www.digistore24-scripts.com/service/digistore.js"></script>
+    <script>digistoreUpsell()</script>
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #ffffff;
+        }
+        /* Gradiente específico da faixa do topo */
+        .banner-gradient {
+            background: linear-gradient(180deg, #F09A64 0%, #E37138 100%);
+        }
+        /* Classe para ocultar os botões */
+        .esconder {
+            display: none;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col items-center">
+
+    <!-- Container Principal Centralizado -->
+    <main class="w-full max-w-[700px] mx-auto px-4 py-8 flex flex-col items-center">
+        
+        <!-- Faixa Laranja de Atenção (com Gradiente) -->
+        <div class="w-full banner-gradient text-white text-center py-4 px-4 shadow-sm mb-6 rounded-sm">
+            <p class="text-lg md:text-xl font-bold leading-tight">
+                ⚠️ Attention: Your blessings and miracles remain vulnerable without this Final Step.
+            </p>
+        </div>
+
+        <!-- Headline Principal -->
+        <h1 class="text-xl md:text-2xl font-extrabold text-black text-center leading-snug mb-4">
+            Your Blessings And Miracles Have Begun — Now You Must Protect Them
+        </h1>
+
+        <!-- Subheadline -->
+        <div class="text-center text-base md:text-lg text-black mb-4">
+            <p class="font-medium">Darkness Reacts to Light.</p>
+            <p>This is your <span class="font-extrabold">Most Critical Step.</span></p>
+        </div>
+
+        <!-- Chamada para o Vídeo -->
+        <p class="text-center text-[15px] md:text-base font-bold italic text-black mb-4 flex items-center justify-center gap-1">
+            🎥 >><span class="underline decoration-transparent">Watch this short message</span> 👇<<
+        </p>
+
+        <!-- Container do Vídeo (Vturb Novo) -->
+        <div class="w-full bg-black/5 rounded-md overflow-hidden relative mb-6" style="min-height: 350px; display: flex; align-items: center; justify-content: center;">
+            
+            <!-- Código do Player Vturb Inserido Aqui -->
+            <vturb-smartplayer id="vid-69c1b30c137969468e7f9fd8" style="display: block; margin: 0 auto; width: 100%;"></vturb-smartplayer>
+            
+        </div>
+
+        <!-- Botões -->
+        <div class="w-full flex flex-col items-center">
+            
+            <!-- Link de Aceite (YES) -->
+            <a href="https://www.checkout-ds24.com/answer/yes?template=light" class="esconder w-full bg-[#3CC80D] hover:bg-[#35b30c] text-white font-bold text-lg md:text-xl py-5 rounded-[12px] border-b-4 border-[#2D9909] uppercase transition-all active:border-b-0 active:translate-y-1 shadow-md cursor-pointer text-center px-4 leading-tight">
+                CONTINUE WITH ACCESS TO MY PRAYER!
+            </a>
+            
+            <!-- Link de Recusa (NO) -->
+            <a href="https://www.checkout-ds24.com/answer/no" class="esconder mt-6 text-gray-600 text-sm hover:text-gray-900 transition-colors">
+                I don't
+            </a>
+            
+        </div>
+
+    </main>
+
+    <!-- Script do Vturb para carregar o player -->
+    <script type="text/javascript">
+        var s=document.createElement("script");
+        s.src="https://scripts.converteai.net/e47d2695-e7da-47cf-a7a5-1f9da5313774/players/69c1b30c137969468e7f9fd8/v4/player.js";
+        s.async=!0;
+        document.head.appendChild(s);
+    </script>
+    
+    <!-- Script de Delay dos Botões -->
+    <script>
+        var delaySeconds = 193; // 03:13 em segundos
+        var player = document.querySelector("vturb-smartplayer");
+        player.addEventListener("player:ready", function() {
+            player.displayHiddenElements(delaySeconds, [".esconder"], {
+                persist: true
+            });
+        });
+    </script>
+</body>
+</html>
